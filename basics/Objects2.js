@@ -82,3 +82,11 @@ console.log(name)
 // } 
 //json is similar to object but key vakues are alos ogiven as strings
 
+
+//To check if object is empty or not
+const ex = {};
+if(Object.keys(ex).length==0)
+{
+    console.log("Array is empty")
+}
+
