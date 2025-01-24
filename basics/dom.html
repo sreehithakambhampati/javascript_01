@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    ghbjnkm
+</body>
+<script>
+const div = document.createElement('div');
+div.setAttribute("title","New title");
+div.className = "Chai"
+// setAttribute method will not overwrite already existing values but remaining methods like div.innerText,div.class will over write alreasy existing values
+// div.innerText = "chai aur code"
+const addText = document.createTextNode("Chai aur code")
+div.appendChild(addText);
+document.body.appendChild(div)
+
+</script>
+</html>

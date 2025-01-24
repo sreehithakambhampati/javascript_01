@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>
+               Javascript
+        </li>
+
+    </ul>
+</body>
+<script>
+    function addLanguage(langName)
+    {
+        const ele = document.createElement('li')
+        ele.innerHTML = langName
+        document.querySelector('.language').appendChild(ele)
+        
+
+    }
+    addLanguage("python")
+    //appendChild is more optimised than innerHTML
+    function addLanguage2(langName)
+    {
+        const ele = document.createElement('li')
+        ele.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(ele)
+       
+
+    }
+    addLanguage2("goll")
+
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "mojo"
+    const newLang = document.createElement('li')
+    newLang.innerText = "mojo"
+    secondLang.replaceWith(newLang)
+     
+
+    //edit
+    const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = '<li>Type<li>'
+
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+
+</script>
+</html>
