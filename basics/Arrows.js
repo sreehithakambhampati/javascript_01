@@ -28,8 +28,8 @@ const obj = {
     value: 10,
     arrowFunc: () => {
         console.log(this.value); // `this` refers to the global scope, not `obj`
-    }
-};
+    } 
+}; 
 obj.arrowFunc(); // Output: undefined
 
 const obj1 = {

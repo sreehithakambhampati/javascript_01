@@ -24,20 +24,20 @@ const myArr2 = [102,103,104]
 // console.log(typeof newArr)
 
 
-// console.log("A ", myArr);
-// const myn1 = myArr.slice(1, 3)
-// console.log(myn1);
-// //original arrays is not changed
-// console.log("B ", myArr);
+console.log("A ", myArr);
+const myn1 = myArr.slice(1, 3)
+console.log(myn1);
+//original arrays is not changed
+console.log("B ", myArr);
 
 
-// const myn2 = myArr.splice(1, 3)
-// //original array changes
-// console.log("C ", myArr);
-// console.log(myn2);
+const myn2 = myArr.splice(1, 3)
+//original array changes
+console.log("C ", myArr);
+console.log(myn2);
 
-// slice(): Non-destructive; extracts a portion of an array into a new array.
-// splice(): Destructive; modifies the original array by adding, removing, or replacing elements.
+slice(): Non-destructive; extracts a portion of an array into a new array.
+splice(): Destructive; modifies the original array by adding, removing, or replacing elements.
 
 
 
