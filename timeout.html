@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Chai aur code</h1>
+    <button id="btn">Stop</button>
+</head>
+<body>
+    <script>
+        const sayHitesh = function(){
+            console.log("Hitesh")
+        }
+        const changeText = function(){
+            document.querySelector('h1').innerText = 'Best java series'
+        }
+        // setTimeout(sayHitesh,2000)
+        const change = setTimeout(changeText,2000)
+        // clearTimeout(changeText) 
+        // it won't work because we didnt assign any variable to the setTimeout function
+    //    clearTimeout(change)
+    document.querySelector('#btn').addEventListener('click',function(){
+        clearTimeout(change)
+        console.log("STOPPED")
+    })
+
+    </script>
+</body>
+</html>
