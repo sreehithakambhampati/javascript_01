@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Button clicked</button>
+</body>
+<script>
+    class React
+    {
+        constructor()
+        {
+            this.library = "React"
+            this.server = "https://localhost:300"
+            // document.querySelector('button').addEventListener('click',this.handleClick)
+            // If we dont use bind here the output will be 
+            // button clicked
+            // undefined
+            // because here this.handleClick refers only to the button
+            //After adding .bind the reference will be the whole constructor 
+            document.querySelector('button').addEventListener('click',this.handleClick.bind(this))
+        //     Output:-
+        //     button clicked
+        //    https://localhost:300
+
+        }
+        handleClick(){
+           console.log("button clicked")
+            console.log(this.server)
+    }
+    }
+    const app = new React()
+    
+       
+</script>
+</html>
